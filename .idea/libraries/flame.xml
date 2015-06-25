@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="flame">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/flame.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
