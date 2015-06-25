@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/act_pro_image_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/act_imgdetail_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="图 片"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+
+        <Button
+            android:id="@+id/act_iamge_header_btn_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gv_img_get_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:horizontalSpacing="8dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="8dp" >
+    </GridView>
+
+    <ScrollView
+        android:id="@+id/sv_image_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/ll_image_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/et_image_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/v5_0_1_blog_editor_content_bg"
+                android:padding="8dip"
+                android:singleLine="true"
+                android:focusable="false"
+                android:textSize="14sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/et_image_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="148dip"
+                android:layout_marginBottom="4dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/v5_0_1_blog_editor_content_bg"
+                android:ems="10"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:focusable="false"
+                android:padding="8dip"
+                android:textSize="14sp">
+            </EditText>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_iamge_get_show.xml -->

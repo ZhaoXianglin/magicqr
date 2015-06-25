@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff5" >
+
+    <RelativeLayout
+        android:id="@+id/act_pro_image_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/act_imgdetail_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="预 览"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+
+        <Button
+            android:id="@+id/act_iamge_header_btn_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+    </RelativeLayout>
+
+    
+    <me.yiqi8.image.photoview.PhotoView
+        android:id="@+id/iv_pro_view"
+        android:layout_below="@id/act_pro_image_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+</RelativeLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_image_detail.xml -->

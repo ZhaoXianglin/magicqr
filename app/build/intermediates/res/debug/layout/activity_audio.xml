@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context=".AudioActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/google_blue" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="13dp"
+            android:text="录制声音"
+            android:textColor="#ffffff"
+            android:textSize="22.0sp" />
+
+        <Button
+            android:id="@+id/audio_record_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+
+        <TextView
+            android:id="@+id/audio_record_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#ffffff"
+        android:scaleType="fitStart"
+        android:src="@drawable/audio_back1" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/google_blue" >
+
+        <ImageView
+            android:id="@+id/audio_imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#00000000"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitStart"
+            android:src="@drawable/musicbg1" />
+
+        <ProgressBar
+            android:id="@+id/audio_progressBar1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="74dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/audio_recode"
+        android:layout_centerHorizontal="true"
+        android:text="按住说话"
+        android:layout_marginBottom="5dip"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/google_brown" />
+
+    <ImageButton
+        android:id="@+id/audio_recode"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginBottom="50dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:scaleType="centerInside"
+        android:src="@drawable/audio_record" />
+
+</RelativeLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_audio.xml -->

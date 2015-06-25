@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeNotExistActivity" >
+
+    <RelativeLayout
+        android:id="@+id/Layout_notfind"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color" >
+
+        <TextView
+            android:id="@+id/textView_notfind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:padding="13dp"
+            android:text="此码不存在"
+            android:textColor="#ffffff"
+            android:textSize="22.0sp" />
+
+        <TextView
+            android:id="@+id/back_notfind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:textSize="22.0sp"
+            android:textColor="#ffffff"
+            android:text="返回" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_below="@id/Layout_notfind"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VedioPrepareActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/google_blue" >
+
+        <Button
+            android:id="@+id/vedio_pre_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"
+            android:text="视频标签"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/rl"
+        android:layout_centerHorizontal="true"
+        android:background="@color/google_brown" >
+
+        <ImageView
+            android:id="@+id/vedio_pre_play"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vedio_pre_play2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/act_upload_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/vedio_pre_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:hint="请输入标签标题"
+            android:padding="8dip"
+            android:singleLine="true"
+            android:focusable="false"
+            android:textSize="14sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/vedio_pre_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="请输入想说的话"
+            android:inputType="textMultiLine"
+            android:padding="8dip"
+            android:focusable="false"
+            android:textSize="14sp" >
+        </EditText>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_vedio_prepare.xml -->

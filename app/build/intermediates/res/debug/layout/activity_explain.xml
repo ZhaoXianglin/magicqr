@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExplainActivity"
+    android:background="#99ffff" >
+    <RelativeLayout
+	android:id="@+id/rl3" 
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/self_actionbar_height"
+    android:layout_alignParentTop="true"
+    android:background="@color/self_actionbar_color"
+    android:gravity="center_vertical" >
+    	<Button
+            android:id="@+id/help_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+    	<TextView
+            android:id="@+id/act_empty"
+            android:layout_width="54dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"/>
+    	
+		<TextView
+            android:id="@+id/act_upload_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/help_back"
+            android:layout_toLeftOf="@id/act_empty"
+            android:gravity="center"
+            android:text="帮助"
+            android:textColor="#ffffff"
+            android:textSize="22.0sp" />
+	</RelativeLayout>
+	<ScrollView
+	    android:layout_below="@id/rl3"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content">
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:padding="5dp"
+	    android:orientation="vertical">
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="特别提示:" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="作品文档的附录中提供了生成好的二维码标签作为测试，恳请各位评委老师过目。" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="1.这是一款什么样的软件" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="MagicQR是一款让客户将多媒体信息保存在二维码中并分享的软件" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="2.二维码标签分类" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="目前我们已经实现了视频音频图片三种二维码标签，更多功能敬请期待" />
+	    
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="3.如何获得一个自己的二维码" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="获得二维码标签的主要渠道是通过购买我们发行在市场上的纸质二维码标签，在测试阶段，可以通过首页中的制码功能获得您想要的二维码，之后使用本软件提供的扫码功能进行扫码，即可开始制作" />
+	    
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="4.关于音频二维码" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="制作音频二维码的过程需要您录制一段录音，之后添加相应的标题与相关描述即可上传" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="5.关于视频二维码" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="制作视频二维码的过程需要您录制一段视频，之后添加相应的标题与相关描述即可上传" />
+	    
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="6.关于图片二维码" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="制作图片二维码的过程中您可以选择从本地选择图片或拍照（最多9张），之后添加相应的标题与相关描述即可上传" />
+	    
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="7.分享属于你的二维码" />
+	    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="制作好二维码之后，再次使用本软件扫码即可观看之前保存好的内容" />
+	</LinearLayout>
+	</ScrollView>    
+</RelativeLayout>
+<!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_explain.xml -->

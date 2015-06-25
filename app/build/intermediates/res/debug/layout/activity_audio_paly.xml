@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Audio_palyActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="音频标签"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+
+        <Button
+            android:id="@+id/audio_play_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_paly_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/audio_play_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:hint="请输入标签标题"
+            android:padding="8dip"
+            android:singleLine="true"
+            android:focusable="false"
+            android:textSize="14sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/audio_play_content"
+            android:layout_width="match_parent"
+            android:layout_height="160dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="请输入想说的话"
+            android:inputType="textMultiLine"
+            android:focusable="false"
+            android:padding="8dip"
+            android:textSize="14sp" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_upload_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/audio_play_seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:layout_above="@+id/audio_play_button"
+            android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/audio_play_button"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/squar_button_training"
+            android:gravity="center"
+            android:text="播放音频"
+            android:textColor="#ffffffff"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_audio_paly.xml -->

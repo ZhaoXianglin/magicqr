@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_buttons_height">155.0dip</dimen>
+    <dimen name="main_buttons_width">155.0dip</dimen>
+    <dimen name="main_header_height">160.0dip</dimen>
+    <dimen name="main_button_text_size">18.0sp</dimen>
+    
+    <dimen name="slidingmenu_offset">80dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    
+    <dimen name="self_actionbar_height">54dip</dimen>
+
+</resources>

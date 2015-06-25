@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff" >
+
+    <RelativeLayout
+        android:id="@+id/act_upload_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/act_upload_header_btn_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+
+        <Button
+            android:id="@+id/act_upload_header_btn_send"
+            android:layout_width="54dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/upload_send" />
+
+        <TextView
+            android:id="@+id/act_upload_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/act_upload_header_btn_send"
+            android:layout_toRightOf="@id/act_upload_header_btn_back"
+            android:gravity="center"
+            android:text="标签内容"
+            android:textColor="#ffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/act_upload_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_upload_header"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/act_upload_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:hint="请输入标签标题"
+            android:padding="8dip"
+            android:singleLine="true"
+            android:textSize="14sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/act_upload_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dip"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="请输入想说的话"
+            android:inputType="textMultiLine"
+            android:padding="8dip"
+            android:textSize="14sp" >
+        </EditText>
+		
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/act_upload_add_position"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:background="@drawable/list_item_selector"
+            android:paddingLeft="18.0dip" >
+
+        </LinearLayout>
+
+        <include layout="@layout/view_list_divide" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="30.0dip"
+            android:background="@color/self_title_background"
+            android:gravity="center_vertical"
+            android:text="设置密码（可选）"
+            android:paddingLeft="18dip"
+            android:layout_marginBottom="5dip"
+             />
+
+        <EditText
+            android:id="@+id/act_upload_password_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:hint="设置密码问题"
+            android:padding="8dip"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/act_upload_password_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="8dip"
+            android:background="@drawable/v5_0_1_blog_editor_content_bg"
+            android:hint="设置问题答案"
+            android:padding="8dip"
+            android:singleLine="true"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/act_upload_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/act_upload_button_reset"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/squar_button_training"
+            android:gravity="center"
+            android:text="取消制作"
+            android:textColor="#ffffffff"
+            android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/act_upload_button_upbtn"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="1dip"
+            android:layout_weight="1"
+            android:background="@drawable/squar_button_training"
+            android:gravity="center"
+            android:text="制作标签"
+            android:textColor="#ffffffff"
+            android:textSize="20dip" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_upload_final.xml -->

@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MagicQRLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical"
+    android:weightSum="10.0" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="4.0" >
+
+        <LinearLayout
+            android:id="@+id/main_header_line"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/main_header_selector"
+            android:orientation="horizontal"
+            android:padding="0.0dip" />
+
+        <ImageView
+            android:id="@+id/main_menu_image"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/main_pager_drawable3"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="6.0"
+        android:orientation="vertical"
+        android:paddingBottom="2.0dip"
+        android:weightSum="2.0" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2.0" >
+
+            <RelativeLayout
+                android:id="@+id/main_btn_scanQR"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_page_tests_selector" >
+
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/main_button_scanQR"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/main_button_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_btn_makeQR"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_page_trainings_selector" >
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/main_button_makeQR"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/main_button_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2.0" >
+
+            <RelativeLayout
+                android:id="@+id/main_btn_aboutme"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_page_status_selector" >
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/main_button_record"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/main_button_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_btn_help"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="2.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_marginTop="1.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/main_page_eye_guide_selector" >
+
+                <TextView
+                    android:id="@+id/tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:text="@string/main_button_help"
+                    android:textColor="#ffffffff"
+                    android:textSize="@dimen/main_button_text_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_main.xml -->

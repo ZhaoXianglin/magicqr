@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff5" >
+
+    <RelativeLayout
+        android:id="@+id/act_image_header"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/act_iamge_header_btn_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+
+        <Button
+            android:id="@+id/act_image_header_btn_next"
+            android:layout_width="54dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iamge_camera" />
+
+        <TextView
+            android:id="@+id/act_upload_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/act_image_header_btn_next"
+            android:layout_toRightOf="@id/act_iamge_header_btn_back"
+            android:gravity="center"
+            android:text="相 册"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_image_header"
+        android:horizontalSpacing="20dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:verticalSpacing="20dp" >
+    </GridView>
+
+</RelativeLayout><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_image_bucket.xml -->

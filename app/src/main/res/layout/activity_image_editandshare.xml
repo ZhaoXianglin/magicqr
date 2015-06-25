@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1eff5" >
+
+    <RelativeLayout
+        android:id="@+id/act_iamge_share_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/image_share_header_btn_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+
+        <Button
+            android:id="@+id/image_share_header_btn_save"
+            android:layout_width="54dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/file_save" />
+
+        <TextView
+            android:id="@+id/act_image_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/image_share_header_btn_save"
+            android:layout_toRightOf="@id/image_share_header_btn_back"
+            android:gravity="center"
+            android:text="编辑分享"
+            android:textColor="#ffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+	    <LinearLayout
+        android:id="@+id/image_share_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/image_share_btn_share"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_weight="1"
+            android:background="@drawable/squar_button_training"
+            android:gravity="center"
+            android:text="分 享"
+            android:textColor="#ffffffff"
+            android:textSize="20dip" />
+
+        <Button
+            android:id="@+id/image_share_btn_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="1dip"
+            android:layout_weight="1"
+            android:background="@drawable/squar_button_training"
+            android:gravity="center"
+            android:text="编辑内容"
+            android:textColor="#ffffffff"
+            android:textSize="20dip" />
+    </LinearLayout>
+    
+	    
+    <me.yiqi8.image.photoview.PhotoView
+        android:id="@+id/iv_pro_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/act_iamge_share_header"
+        android:layout_above="@id/image_share_btn"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+
+
+</RelativeLayout>

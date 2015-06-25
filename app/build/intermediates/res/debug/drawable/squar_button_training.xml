@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:angle="270.0" android:endColor="#ffd23e48" android:startColor="#ffd23e48" />
+            <corners android:radius="0.5dip" />
+            <padding android:bottom="10.0dip" android:left="10.0dip" android:right="10.0dip" android:top="10.0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient android:angle="270.0" android:endColor="#fff74955" android:startColor="#fff74955" />
+            <corners android:radius="0.5dip" />
+            <padding android:bottom="10.0dip" android:left="10.0dip" android:right="10.0dip" android:top="10.0dip" />
+        </shape>
+    </item>
+</selector><!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/drawable/squar_button_training.xml -->

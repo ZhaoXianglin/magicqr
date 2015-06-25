@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaveDataActivity" >
+
+    <RelativeLayout
+	android:id="@+id/rl4" 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#099ffe" >
+    	<TextView
+    	    android:id="@+id/save_back"
+		    android:text="返回"
+		    android:textColor="#ffffff"
+		    android:textSize="20sp"
+		    android:layout_centerVertical="true"
+		    android:padding="10dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+		<TextView
+		    android:text="使用记录"
+		    android:textColor="#ffffff"
+		    android:textSize="25sp"
+		    android:layout_centerHorizontal="true"
+		    android:padding="10dp"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"/>
+	</RelativeLayout>
+
+	<ListView
+	    android:id="@+id/savelist"
+	    android:layout_below="@id/rl4"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp" />
+
+</RelativeLayout>
+<!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/activity_save_data.xml -->

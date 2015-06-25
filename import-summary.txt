@@ -1,0 +1,146 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .DS_Store
+* .gitignore
+* .gitignore.bak
+* LICENSE
+* README.md
+* obj/
+* obj/local/
+* obj/local/armeabi/
+* obj/local/armeabi/libiconv.a
+* obj/local/armeabi/libzbar.so
+* obj/local/armeabi/objs/
+* obj/local/armeabi/objs/iconv/
+* obj/local/armeabi/objs/iconv/libiconv/
+* obj/local/armeabi/objs/iconv/libiconv/iconv.o
+* obj/local/armeabi/objs/iconv/libiconv/iconv.o.d
+* obj/local/armeabi/objs/zbar/
+* obj/local/armeabi/objs/zbar/android_zbar.o
+* obj/local/armeabi/objs/zbar/android_zbar.o.d
+* obj/local/armeabi/objs/zbar/convert.o
+* obj/local/armeabi/objs/zbar/convert.o.d
+* obj/local/armeabi/objs/zbar/decoder.o
+* obj/local/armeabi/objs/zbar/decoder.o.d
+* obj/local/armeabi/objs/zbar/decoder/
+* obj/local/armeabi/objs/zbar/decoder/qr_finder.o
+* obj/local/armeabi/objs/zbar/decoder/qr_finder.o.d
+* obj/local/armeabi/objs/zbar/error.o
+* obj/local/armeabi/objs/zbar/error.o.d
+* obj/local/armeabi/objs/zbar/image.o
+* obj/local/armeabi/objs/zbar/image.o.d
+* obj/local/armeabi/objs/zbar/img_scanner.o
+* obj/local/armeabi/objs/zbar/img_scanner.o.d
+* obj/local/armeabi/objs/zbar/processor/
+* obj/local/armeabi/objs/zbar/processor/null.o
+* obj/local/armeabi/objs/zbar/processor/null.o.d
+* obj/local/armeabi/objs/zbar/qrcode/
+* obj/local/armeabi/objs/zbar/qrcode/bch15_5.o
+* obj/local/armeabi/objs/zbar/qrcode/bch15_5.o.d
+* obj/local/armeabi/objs/zbar/qrcode/binarize.o
+* obj/local/armeabi/objs/zbar/qrcode/binarize.o.d
+* obj/local/armeabi/objs/zbar/qrcode/isaac.o
+* obj/local/armeabi/objs/zbar/qrcode/isaac.o.d
+* obj/local/armeabi/objs/zbar/qrcode/qrdec.o
+* obj/local/armeabi/objs/zbar/qrcode/qrdec.o.d
+* obj/local/armeabi/objs/zbar/qrcode/qrdectxt.o
+* obj/local/armeabi/objs/zbar/qrcode/qrdectxt.o.d
+* obj/local/armeabi/objs/zbar/qrcode/rs.o
+* obj/local/armeabi/objs/zbar/qrcode/rs.o.d
+* obj/local/armeabi/objs/zbar/qrcode/util.o
+* obj/local/armeabi/objs/zbar/qrcode/util.o.d
+* obj/local/armeabi/objs/zbar/refcnt.o
+* obj/local/armeabi/objs/zbar/refcnt.o.d
+* obj/local/armeabi/objs/zbar/scanner.o
+* obj/local/armeabi/objs/zbar/scanner.o.d
+* obj/local/armeabi/objs/zbar/symbol.o
+* obj/local/armeabi/objs/zbar/symbol.o.d
+* obj/local/armeabi/objs/zbar/video.o
+* obj/local/armeabi/objs/zbar/video.o.d
+* obj/local/armeabi/objs/zbar/video/
+* obj/local/armeabi/objs/zbar/video/null.o
+* obj/local/armeabi/objs/zbar/video/null.o.d
+* obj/local/armeabi/objs/zbar/window.o
+* obj/local/armeabi/objs/zbar/window.o.d
+* obj/local/armeabi/objs/zbar/window/
+* obj/local/armeabi/objs/zbar/window/null.o
+* obj/local/armeabi/objs/zbar/window/null.o.d
+* proguard-project.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:19.1.0
+
+Replaced Libraries with Dependencies:
+-------------------------------------
+The importer recognized the following library projects as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the source files in your project were of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the library replacement in the import wizard and try
+again:
+
+appcompat-v7 => [com.android.support:appcompat-v7:19.1.0]
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app/src/main/AndroidManifest.xml
+* assets/ => app/src/main/assets
+* libs/android-async-http-1.4.6.jar => app/libs/android-async-http-1.4.6.jar
+* libs/armeabi-v7a/libMtaNativeCrash.so => app/src/main/jniLibs/armeabi-v7a/libMtaNativeCrash.so
+* libs/armeabi-v7a/libzbar.so => app/src/main/jniLibs/armeabi-v7a/libzbar.so
+* libs/armeabi/libMtaNativeCrash.so => app/src/main/jniLibs/armeabi/libMtaNativeCrash.so
+* libs/armeabi/libmp3lame.so => app/src/main/jniLibs/armeabi/libmp3lame.so
+* libs/armeabi/libzbar.so => app/src/main/jniLibs/armeabi/libzbar.so
+* libs/core.jar => app/libs/core.jar
+* libs/flame.jar => app/libs/flame.jar
+* libs/gradle-wrapper.jar => app/libs/gradle-wrapper.jar
+* libs/httpmime-4.3.6.jar => app/libs/httpmime-4.3.6.jar
+* libs/mid-sdk-2.10.jar => app/libs/mid-sdk-2.10.jar
+* libs/mips/libMtaNativeCrash.so => app/src/main/jniLibs/mips/libMtaNativeCrash.so
+* libs/mips/libzbar.so => app/src/main/jniLibs/mips/libzbar.so
+* libs/mta-sdk-2.0.0.jar => app/libs/mta-sdk-2.0.0.jar
+* libs/slidingmenu.jar => app/libs/slidingmenu.jar
+* libs/test.jar => app/libs/test.jar
+* libs/universal-image-loader-1.9.1.jar => app/libs/universal-image-loader-1.9.1.jar
+* libs/x86/libMtaNativeCrash.so => app/src/main/jniLibs/x86/libMtaNativeCrash.so
+* libs/x86/libzbar.so => app/src/main/jniLibs/x86/libzbar.so
+* lint.xml => app/lint.xml
+* res/ => app/src/main/res/
+* src/ => app/src/main/java/
+* sound_line1.BMP => sound_line1.bmp
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)

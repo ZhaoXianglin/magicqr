@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="self_actionbar_color">#009cce</color>
+ <!-- 自定义导航栏颜色 -->
+    <color name="self_title_background">#dddddd</color>
+ <!-- 页面内标题底色 -->
+    <color name="white">#ffffff</color>
+ <!-- 白色 -->
+ <color name="google_blue">#2a9dd6</color>
+ <!-- 蓝色 -->
+ <color name="google_green">#52b541</color>
+ <!-- 绿色 -->
+ <color name="google_yellow">#facc31</color>
+ <!-- 黄色 -->
+ <color name="google_red">#f45945</color>
+ <!-- 红色 -->
+  <color name="google_brown">#544e4b</color>
+ <!-- 灰色 -->
+  <color name="google_light_brown">#9da6a2</color>
+ <!-- 浅灰色 -->
+ 
+   
+    <color name="black">#000000</color>
+ <!-- 黑色 -->
+    <color name="transparent">#0000</color>
+ <!-- 透明 -->
+    <color name="transparent2">#8000</color>
+ <!-- 透明 -->
+
+    <color name="style_red">#ff4c41</color>
+    <color name="style_divider_color">#C9C7CD</color>
+
+</resources>

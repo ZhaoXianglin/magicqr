@@ -1,0 +1,24 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".FindAudioActivity" >
+
+    <TextView
+        android:id="@+id/findAudiotext"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:background="#ffa500"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/please_add" />
+  	 <ListView
+  	     android:layout_below="@id/findAudiotext"
+  	    android:id="@+id/audio_musiclist"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+     />
+
+
+</RelativeLayout>

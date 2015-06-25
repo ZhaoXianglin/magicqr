@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/act_upload_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/self_actionbar_height"
+        android:layout_alignParentTop="true"
+        android:background="@color/self_actionbar_color"
+        android:gravity="center_vertical" >
+
+        <Button
+            android:id="@+id/act_img_header_btn_back"
+            android:layout_width="54.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back_btn_stats" />
+
+        <TextView
+            android:id="@+id/act_img_header_btn_next"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@drawable/text_while"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/act_img_header_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/act_img_header_btn_next"
+            android:layout_toRightOf="@id/act_img_header_btn_back"
+            android:gravity="center"
+            android:text="选择照片"
+            android:textColor="#ffffffff"
+            android:textSize="22.0sp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/act_img_content_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip"
+        android:verticalSpacing="5dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:scrollbars="none" >
+    </GridView>
+
+</LinearLayout>

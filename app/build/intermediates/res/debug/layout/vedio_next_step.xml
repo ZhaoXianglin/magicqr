@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout   
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center_horizontal"  
+    android:orientation="vertical"  
+  >  
+  
+<LinearLayout   
+    android:id="@+id/pop_layout"  
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center_horizontal"  
+    android:orientation="vertical"  
+    android:layout_alignParentBottom="true"  
+     android:background="#cfcfcf"  
+     >
+     
+   
+    
+     <Button  
+        android:id="@+id/btn_vedio_next"  
+        android:layout_marginLeft="200dip"  
+        android:layout_marginRight="200dip"  
+        android:layout_marginTop="5dip"  
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="录制完成" 
+        android:textColor="#000000" 
+        android:background="#ffffff"  
+        android:textStyle="bold"  
+         />  
+  
+    <Button  
+        android:id="@+id/btn_vedio_restart"  
+        android:layout_marginLeft="200dip"  
+        android:layout_marginRight="200dip"  
+        android:layout_marginTop="5dip"   
+         android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="重新录制"
+        android:textColor="#000000"  
+         android:background="#ffffff"  
+         android:textStyle="bold"  
+         />  
+</LinearLayout>  
+</RelativeLayout>   <!-- From: file:/Users/jarvis/AndroidStudioProjects/magicqr/app/src/main/res/layout/vedio_next_step.xml -->
